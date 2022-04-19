@@ -12,7 +12,7 @@ PGHDcdmTofhir
 |Tomcat|8.5||
 |Maven|3.8.1||
 |Database|Oracle<br />Redshift|- Oracle Database 10g<br />- PostgreSQL 8.0.2, Redshift 1.0.12103|
-|CDM|v5.3|CDM V6.0 추가<br />- OBSERVATION.observation_event_id<br />- OBSERVATION.obs_event_field_concept_id|
+|CDM|v5.3|CDM V6.0 추가<br />- OBSERVATION.observation_event_id<br />- OBSERVATION.obs_event_field_concept_id<br />- SURVEY_CONDUCT|
 
 ## 오픈소스
 |이름|버전|비고|
