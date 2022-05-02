@@ -69,20 +69,20 @@ server.defaultoffset=0
 
 - redshift 설정
 ```
-#dataSource.driverClassName=com.amazon.redshift.jdbc42.Driver
-#dataSource.url=jdbc:redshift:{IP}:{PORT}/{DatabaseName}
-#dataSource.username={ID}
-#dataSource.password={Password}
+dataSource.driverClassName=com.amazon.redshift.jdbc42.Driver
+dataSource.url=jdbc:redshift:{IP}:{PORT}/{DatabaseName}
+dataSource.username={ID}
+dataSource.password={Password}
 
-#dataSource.maxActive=8
-#dataSource.maxIdle=8
-#dataSource.minIdle=1
-#dataSource.ValidationQuery=select 1
+dataSource.maxActive=8
+dataSource.maxIdle=8
+dataSource.minIdle=1
+dataSource.ValidationQuery=select 1
 
-#hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
-#hibernate.show_sql=false
-#hibernate.format_sql=false
-#hibernate.packagesToScan=org.snubh.hirc.pghd.api.dto
+hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+hibernate.show_sql=false
+hibernate.format_sql=false
+hibernate.packagesToScan=org.snubh.hirc.pghd.api.dto
 ```
 - Oracle 설정
 ```
