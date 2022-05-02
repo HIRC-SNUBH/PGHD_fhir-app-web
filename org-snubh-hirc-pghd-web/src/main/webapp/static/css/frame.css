@@ -1,0 +1,119 @@
+/*
+ * Base structure
+ */
+
+body {
+  margin: 0;
+  color: #595959;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px; 
+}
+
+.main .nav-tabs > li.active > a,
+.main .nav-tabs > li.active > a:focus,
+.main .nav-tabs > li.active > a:hover {
+  border-top: 2px solid #3498db;
+  color: #444;
+}
+
+.main .nav-tabs > li.disabled > a {
+  color: #ffffff;
+  pointer-events: none;
+}
+
+.main .nav-tabs-style {
+  width: 370px;
+}
+
+.main .nav-tabs-border {
+  width: 1110px;
+  float: right;
+  border-bottom: 1px solid #ddd;
+}
+
+.form-space {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 22px;
+}
+
+.row-space {
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.row-space2 {
+  position: relative;
+  margin-top: 55px;
+  margin-bottom: 25px;
+}
+
+.row-space3 {
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.row-space4 {
+  position: relative;
+  margin-top: 25px;
+}
+
+.row-space5 {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.radio-space {
+  margin-right: 15px;
+}
+
+table {
+  width: 100%;
+}
+.table-style th, td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0; 
+}
+.table-style input {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.panel-style {
+  height: 510px;
+  overflow: auto;
+}
+
+.panel-style-header {
+  height: 100px;
+  overflow: auto;
+}
+
+.panel-style-body {
+  height: 500px;
+  overflow: auto;
+}
+
+.panel-style-body-long {
+  height: 800px;
+  overflow: auto;
+}
+
+.input-style-url {
+  background: #fafafa;
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  font-size: 16px;
+}
+

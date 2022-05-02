@@ -1,0 +1,261 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "snubh-survey-questions",
+  "title": "설문지",
+  "status": "active",
+  "code": [ {
+    "system": "SNUBH generated",
+    "code": "SNUBH0050",
+    "display": "Health Questionnaire"
+  } ],
+  "item": [ {
+    "linkId": "4076095",
+    "code": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html",
+      "code": "224083004",
+      "display": "Marital or partnership status"
+    } ]
+  }, {
+    "linkId": "4076229",
+    "code": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html",
+      "code": "224293004",
+      "display": "Education received in the past"
+    } ]
+  }, {
+    "linkId": "40768086",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "65390-7",
+      "display": "Are you currently taking any other medication on a daily basis [PhenX]"
+    } ]
+  }, {
+    "linkId": "4083519",
+    "code": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html",
+      "code": "281666001",
+      "display": "Family history of disorder"
+    } ]
+  }, {
+    "linkId": "4214956",
+    "code": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html",
+      "code": "417662000",
+      "display": "History of clinical finding in subject"
+    } ]
+  }, {
+    "linkId": "40771103",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "68518-0",
+      "display": "How often do you have a drink containing alcohol"
+    } ]
+  }, {
+    "linkId": "40771104",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "68519-8",
+      "display": "How many standard drinks containing alcohol do you have on a typical day [SAMHSA]"
+    } ]
+  }, {
+    "linkId": "40771105",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "68520-6",
+      "display": "How often do you have 6 or more drinks on 1 occasion [SAMHSA]"
+    } ]
+  }, {
+    "linkId": "4041306",
+    "code": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html",
+      "code": "229819007",
+      "display": "Tobacco use and exposure"
+    } ]
+  }, {
+    "linkId": "40766360",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "63636-5",
+      "display": "How soon after you wake up do, or did, you smoke your first cigarette [FTND]"
+    } ]
+  }, {
+    "linkId": "40766643",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "63923-7",
+      "display": "In the past, have you ever made a serious attempt to quit smoking That is, have you stopped smoking for at least one day or longer because you were trying to quit [PLCO]"
+    } ]
+  }, {
+    "linkId": "40766642",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "63922-9",
+      "display": "Are you considering quitting smoking during the next 6 months [PLCO]"
+    } ]
+  }, {
+    "linkId": "40766647",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "63927-8",
+      "display": "During the past 12 months, did any doctor, dentist, nurse, or any other health professional advise you to quit smoking [PLCO]"
+    } ]
+  }, {
+    "linkId": "40768306",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "65614-0",
+      "display": "How often do you feel so sleepy during the day that it interrupts your normal activities [PhenX]"
+    } ]
+  }, {
+    "linkId": "40767203",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "64495-5",
+      "display": "How often does this nodding off or falling alseep while driving occur [PhenX]"
+    } ]
+  }, {
+    "linkId": "37021058",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "91429-1",
+      "display": "I felt as if I needed to move my legs a lot in past 7 days [PROMIS.PEDS]"
+    } ]
+  }, {
+    "linkId": "40767197",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "64489-8",
+      "display": "How often do you snore [PhenX]"
+    } ]
+  }, {
+    "linkId": "40767199",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "64491-4",
+      "display": "Has anyone noticed that you quit breathing during your sleep [PhenX]"
+    } ]
+  }, {
+    "linkId": "42868707",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "70233-2",
+      "display": "Trouble falling or staying asleep in the last month [PCL-C]"
+    } ]
+  }, {
+    "linkId": "2000000371",
+    "code": [ {
+      "display": "For the past 1 month, have you ever suffered from severe hardships that were emotionally and physically intolerable?"
+    } ]
+  }, {
+    "linkId": "2000000372",
+    "code": [ {
+      "display": "For the past 1 month, have you ever felt frustrated trying to act up to your conviction or faith?"
+    } ]
+  }, {
+    "linkId": "2000000373",
+    "code": [ {
+      "display": "For The Past 1 Month, Have You Ever Felt That Your Circumstances Were Insufficient To Live Humanly?"
+    } ]
+  }, {
+    "linkId": "2000000374",
+    "code": [ {
+      "display": "For the past 1 month, have you ever felt uncertain or uneasy about your future?"
+    } ]
+  }, {
+    "linkId": "2000000375",
+    "code": [ {
+      "display": "For the past 1 month, have you ever had many things to do, so you forgot to do the things that were really important to you?"
+    } ]
+  }, {
+    "linkId": "3042924",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "44250-9",
+      "display": "Little interest or pleasure in doing things in last 2 weeks [Reported.PHQ]"
+    } ]
+  }, {
+    "linkId": "3045858",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "44255-8",
+      "display": "Feeling down, depressed, or hopeless in last 2 weeks [Reported.PHQ]"
+    } ]
+  }, {
+    "linkId": "3045933",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "44259-0",
+      "display": "Trouble falling or staying asleep, or sleeping too much in last 2 weeks [Reported.PHQ]"
+    } ]
+  }, {
+    "linkId": "3044964",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "44254-1",
+      "display": "Feeling tired or having little energy in last 2 weeks [Reported.PHQ]"
+    } ]
+  }, {
+    "linkId": "3044098",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "44251-7",
+      "display": "Poor appetite or overeating in last 2 weeks [Reported.PHQ]"
+    } ]
+  }, {
+    "linkId": "3045019",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "44252-5",
+      "display": "Trouble concentrating on things, such as reading the newspaper or watching television in last 2 weeks [Reported.PHQ]"
+    } ]
+  }, {
+    "linkId": "3043785",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "44253-3",
+      "display": "Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual in last 2 weeks [Reported.PHQ]"
+    } ]
+  }, {
+    "linkId": "3043462",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "44260-8",
+      "display": "Thoughts that you would be better off dead, or of hurting yourself in some way in last 2 weeks [Reported.PHQ]"
+    } ]
+  }, {
+    "linkId": "4266613",
+    "code": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html",
+      "code": "364649005",
+      "display": "Regularity of eating"
+    } ]
+  }, {
+    "linkId": "2000000345",
+    "code": [ {
+      "system": "SNUBH generated",
+      "code": "SNUBH0047",
+      "display": "How fast do you eat meals?"
+    } ]
+  }, {
+    "linkId": "4241588",
+    "code": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html",
+      "code": "58424009",
+      "display": "Overeating"
+    } ]
+  }, {
+    "linkId": "4125259",
+    "code": [ {
+      "system": "http://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html",
+      "code": "289137002",
+      "display": "Breakfast routine"
+    } ]
+  }, {
+    "linkId": "46236008",
+    "code": [ {
+      "system": "http://loinc.org/downloads/loinc",
+      "code": "77298-8",
+      "display": "Yesterday, how many times did the patient eat food from any type of restaurant? #"
+    } ]
+  } ]
+}

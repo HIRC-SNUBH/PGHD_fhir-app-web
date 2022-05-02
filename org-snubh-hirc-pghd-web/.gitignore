@@ -1,0 +1,10 @@
+.classpath
+.project
+/.settings
+/target/classes
+/target/m2e-wtp
+/target/maven*
+/target/surefire-reports
+/target/test-classes
+/target/*.war
+/target/

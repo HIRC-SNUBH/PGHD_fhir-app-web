@@ -1,0 +1,56 @@
+{
+  "resourceType": "Patient",
+  "id": "3099361824",
+  "meta": {
+    "lastUpdated": "2022-03-25T17:02:00.685+09:00",
+    "profile": [
+      "https://build.fhir.org/ig/HIRC-SNUBH/PGHD-CDMtoFHIR/StructureDefinition/PGHD-CDM-Patient"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2028-9",
+            "display": "Asian"
+          }
+        },
+        {
+          "url": "detailed",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2040-4",
+            "display": "Korean"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "Korean"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "value": "3099361824"
+    }
+  ],
+  "active": true,
+  "gender": "male",
+  "birthDate": "1961-11-01",
+  "address": [
+    {
+      "state": "Gyeonggi-do",
+      "city" : "Gwangju-si",
+      "postalcode" : "127",
+      "country": "South Korea"
+    }
+  ],
+  "managingOrganization": {
+    "reference": "Organization/1100"
+  }
+}

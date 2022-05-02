@@ -1,0 +1,78 @@
+{
+  "_args": [
+    [
+      "fhirclient@2.1.0",
+      "D:\\_Lab\\_Lab Project\\_0000.SMARTonFHIR\\AppTesting\\bp-centiles-app-master"
+    ]
+  ],
+  "_from": "fhirclient@2.1.0",
+  "_id": "fhirclient@2.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-gBO7+dIpXGeVWcX9urT0ZRaS7WhRvfocFoLWMrSg0HV2oAkhl8n5+SLlNvkzQJst8Qi2+axqcmsqAJvjEwIstQ==",
+  "_location": "/fhirclient",
+  "_phantomChildren": {
+    "ms": "2.1.2"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "fhirclient@2.1.0",
+    "name": "fhirclient",
+    "escapedName": "fhirclient",
+    "rawSpec": "2.1.0",
+    "saveSpec": null,
+    "fetchSpec": "2.1.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/fhirclient/-/fhirclient-2.1.0.tgz",
+  "_spec": "2.1.0",
+  "_where": "D:\\_Lab\\_Lab Project\\_0000.SMARTonFHIR\\AppTesting\\bp-centiles-app-master",
+  "author": {
+    "name": "SMART Health IT",
+    "email": "support@smarthealthit.org",
+    "url": "https://smarthealthit.org/"
+  },
+  "browser": "lib/browser.js",
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 firefox versions",
+    "last 2 Edge versions",
+    "ie 10-11"
+  ],
+  "bugs": {
+    "url": "https://github.com/smart-on-fhir/client-js/issues"
+  },
+  "contributors": [
+    {
+      "name": "Josh Mandel",
+      "email": "joshua.mandel@childrens.harvard.edu"
+    },
+    {
+      "name": "Vladimir Ignatov",
+      "email": "vlad.ignatov@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "debug": "^4.1.1",
+    "node-fetch-npm": "^2.0.2",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "description": "JavaScript client for Fast Healthcare Interoperability Resources",
+  "engine": "node >= 10",
+  "homepage": "http://docs.smarthealthit.org/client-js/",
+  "keywords": [
+    "SMART",
+    "FHIR",
+    "Client"
+  ],
+  "license": "Apache-2.0",
+  "main": "lib/adapters/NodeAdapter.js",
+  "name": "fhirclient",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smart-on-fhir/client-js.git"
+  },
+  "version": "2.1.0"
+}

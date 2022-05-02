@@ -1,0 +1,235 @@
+/*
+* datepicker
+*/
+.ui-datepicker {
+  /*background: transparent;*/
+  background: white;
+}
+
+/*
+ * Base structure
+ */
+
+body {
+  padding-top: 10px;
+  background-color: white;
+}
+
+/*
+ * Select Style
+ */
+
+ /*select.customSelect {
+  padding: .8em .5em;
+  font-family: inherit;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}*/
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #333;
+    border-right: 1px solid #eee;
+  }
+}
+
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+  margin-top: 60px;
+}
+
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #428bca;
+  font-weight: 500;
+}
+
+.nav-sidebar > li > a:hover {
+  background-color: #333;
+  color: #eee;
+}
+
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+.nav-sidebar .submenu {
+  display: none;
+  color: #428bca;
+  margin-left: 40px;
+}
+
+.nav-sidebar > .active .submenu {
+  display: block;
+}
+
+.nav-sidebar .submenu > ul > li > a:link,
+.nav-sidebar .submenu > ul > li > a:visited {
+  color: #A2B4B3;
+  text-decoration: none;
+}
+
+.nav-sidebar .submenu > ul > li > a:hover,
+.nav-sidebar .submenu > ul > li.active > a,
+.nav-sidebar .submenu > ul > li.active > a:focus {
+  color: #f8b739;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.copyright-style {
+  position: absolute;
+  width: 100%;
+  top: 90vh;
+  color:#7F7F7F;
+  font-size: 12px;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px; 
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+.main .page-iframe {
+  position: relative;
+  width: 100%;
+  height: 92vh;
+  border: none;
+  overflow-y: scroll;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent rgb(0, 0, 0) transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}

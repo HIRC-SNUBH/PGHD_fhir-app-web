@@ -1,0 +1,74 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.snubh</groupId>
+	<artifactId>org-snubh-hirc-pghd</artifactId>
+	<version>1.0.0</version>
+
+	<packaging>pom</packaging>
+
+	<name>HIRC-PGHD</name>
+	<description>An open-source implementation of the FHIR specification() in Java.</description>
+	<url>https://hapifhir.io</url>
+
+	<organization>
+		<name>분당서울대학교병원</name>
+		<url>https://www.snubh.org</url>
+	</organization>
+
+	<inceptionYear>2021</inceptionYear>
+
+	<licenses>
+		<license>
+			<name>Apache Software License 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+
+	<modules>
+		<module>./org-snubh-hirc-pghd-api</module>
+		<module>./org-snubh-hirc-pghd-web</module>
+	</modules>
+
+	<properties>
+		<skipTests>true</skipTests>
+		<!-- Generic properties -->
+		<java.version>1.8</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<hapifhir.version>5.4.1</hapifhir.version>
+		<org.springframework.version>5.3.7</org.springframework.version>
+		<hibernate.version>5.5.3.Final</hibernate.version>
+		<logback.version>1.0.13</logback.version>
+		<slf4j.version>1.7.5</slf4j.version>
+		<org.log4j.version>2.17.1</org.log4j.version>
+		
+		<commons.lang3.version>3.10</commons.lang3.version>
+		<disruptor.version>3.4.2</disruptor.version>
+
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.2</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+</project>
