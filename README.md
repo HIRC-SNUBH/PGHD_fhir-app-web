@@ -2,8 +2,9 @@ PGHDcdmTofhir
 ===
 - CDM PGHD to FHIR(IG)의 서버 API 및 시각화 WEB
 
-## CDM PGHD to FHIR IG
-- https://build.fhir.org/ig/HIRC-SNUBH/PGHD-CDMtoFHIR/
+## 참조
+- FHIR Implementation Guide [SNUBH CDM PGHD to FHIR](https://build.fhir.org/ig/HIRC-SNUBH/PGHD-CDMtoFHIR)
+- [PGHD (Patient-Generated Health Data)의 OMOP CDM 변환 가이드라인](https://github.com/HIRC-SNUBH/PGHD_conversion_guide)
 
 ## 개발환경
 |Tool|버전|비고|
