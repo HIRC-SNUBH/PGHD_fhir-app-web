@@ -117,8 +117,9 @@
 			<version>${commons.lang3.version}</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/com.lmax/disruptor -->
 		<dependency>
-			<groupId>com.Imax</groupId>
+			<groupId>com.lmax</groupId>
 			<artifactId>disruptor</artifactId>
 			<version>${disruptor.version}</version>
 		</dependency>

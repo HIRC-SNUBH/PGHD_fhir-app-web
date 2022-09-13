@@ -191,8 +191,9 @@
 			<version>1.4</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/com.lmax/disruptor -->
 		<dependency>
-			<groupId>com.Imax</groupId>
+			<groupId>com.lmax</groupId>
 			<artifactId>disruptor</artifactId>
 			<version>${disruptor.version}</version>
 		</dependency>
@@ -214,8 +215,10 @@
 		<dependency>
 			<groupId>com.amazon.redshift</groupId>
 			<artifactId>redshift-jdbc42</artifactId>
-			<version>1.2.1.1001</version>
+			<version>2.1.0.9</version>
 		</dependency>
+
+
 
 	</dependencies>
 
