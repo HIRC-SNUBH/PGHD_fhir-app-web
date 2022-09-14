@@ -5,8 +5,17 @@ PGHDcdmTofhir
 ## 참조
 - FHIR Implementation Guide [SNUBH CDM PGHD to FHIR](https://build.fhir.org/ig/HIRC-SNUBH/PGHD-CDMtoFHIR)
 - [PGHD (Patient-Generated Health Data)의 OMOP CDM 변환 가이드라인](https://github.com/HIRC-SNUBH/PGHD_conversion_guide)
+### 오픈소스
+|이름|버전|비고|
+|:---:|:---:|:---|
+|HAPI FHIR|5.4.1|https://github.com/hapifhir/hapi-fhir
+|client-js|2.1.0|https://github.com/smart-on-fhir/client-js
+|chart.js|3.5.1|https://github.com/chartjs/Chart.js
+|chartjs-chart-boxplot||https://github.com/sgratzl/chartjs-chart-boxplot
+|chartjs-chart-sankey||https://github.com/kurkle/chartjs-chart-sankey
+|fhirstarters||https://github.com/FirelyTeam/fhirstarters|
 
-## 실행파일을 통한 시각화
+## 빌드 파일을 이용한 실행
 ### 실행환경
 |Tool|버전|비고|
 |:---:|:---:|:---|
@@ -58,7 +67,7 @@ hibernate.packagesToScan=org.snubh.hirc.pghd.api.dto
     - 시각화 WEB : <http://localhost:6001/org-snubh-hirc-pghd-web/>
     - FHIR 서버 API : <http://localhost:6001/org-snubh-hirc-pghd-api/fhir/>
 
-## 빌드를 통한 직접 실행파일 생성
+## 직접 빌드를 통한 실행파일 생성
 ### 인터넷 가능한 빌드환경(eGovFrame : Eclipse 또는 Maven 사용) 
 |Tool|버전|비고|
 |:---:|:---:|:---|
@@ -67,16 +76,6 @@ hibernate.packagesToScan=org.snubh.hirc.pghd.api.dto
 |Maven|3.8.1||
 |Database|Oracle<br />Redshift|- Oracle Database 10g<br />- PostgreSQL 8.0.2, Redshift 1.0.12103|
 |CDM|v5.3|CDM V6.0 추가<br />- OBSERVATION.observation_event_id<br />- OBSERVATION.obs_event_field_concept_id<br />- SURVEY_CONDUCT|
-
-### 오픈소스(참고)
-|이름|버전|비고|
-|:---:|:---:|:---|
-|HAPI FHIR|5.4.1|https://github.com/hapifhir/hapi-fhir
-|client-js|2.1.0|https://github.com/smart-on-fhir/client-js
-|chart.js|3.5.1|https://github.com/chartjs/Chart.js
-|chartjs-chart-boxplot||https://github.com/sgratzl/chartjs-chart-boxplot
-|chartjs-chart-sankey||https://github.com/kurkle/chartjs-chart-sankey
-|fhirstarters||https://github.com/FirelyTeam/fhirstarters|
 
 ### 환경설정
 #### org-snubh-hirc-pghd-web
