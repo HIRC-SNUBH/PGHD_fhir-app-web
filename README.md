@@ -15,7 +15,7 @@ PGHDcdmTofhir
 |Database|Oracle<br />Redshift|- Oracle Database 10g<br />- PostgreSQL 8.0.2, Redshift 1.0.12103|
 |CDM|v5.3|CDM V6.0 추가<br />- OBSERVATION.observation_event_id<br />- OBSERVATION.obs_event_field_concept_id<br />- SURVEY_CONDUCT|
 
-### DB 설정(실행 환경에 맞도록 셋팅 필요)
+### DB 설정(실행 환경에 맞는 셋팅 필요)
 경로 : org-snubh-hirc-pghd-api/src/main/resources/config.properties
 - redshift 설정
 ```
