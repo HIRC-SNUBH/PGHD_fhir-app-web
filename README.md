@@ -5,7 +5,17 @@ PGHDcdmTofhir
 ## 참조
 - FHIR Implementation Guide [SNUBH CDM PGHD to FHIR](https://build.fhir.org/ig/HIRC-SNUBH/PGHD-CDMtoFHIR)
 - [PGHD (Patient-Generated Health Data)의 OMOP CDM 변환 가이드라인](https://github.com/HIRC-SNUBH/PGHD_conversion_guide)
-### 오픈소스
+
+## 개발환경
+|Tool|버전|비고|
+|:---:|:---:|:---|
+|JDK|1.8||
+|Tomcat|8.5||
+|Maven|3.8.1||
+|Database|Oracle<br />Redshift|- Oracle Database 10g<br />- PostgreSQL 8.0.2, Redshift 1.0.12103|
+|CDM|v5.3|CDM V6.0 추가<br />- OBSERVATION.observation_event_id<br />- OBSERVATION.obs_event_field_concept_id<br />- SURVEY_CONDUCT|
+
+## 오픈소스
 |이름|버전|비고|
 |:---:|:---:|:---|
 |HAPI FHIR|5.4.1|https://github.com/hapifhir/hapi-fhir
@@ -15,70 +25,8 @@ PGHDcdmTofhir
 |chartjs-chart-sankey||https://github.com/kurkle/chartjs-chart-sankey
 |fhirstarters||https://github.com/FirelyTeam/fhirstarters|
 
-## 빌드 파일을 이용한 실행
-### 실행환경
-|Tool|버전|비고|
-|:---:|:---:|:---|
-|JDK|1.8||
-|Tomcat|8.5||
-|Database|Oracle<br />Redshift|- Oracle Database 10g<br />- PostgreSQL 8.0.2, Redshift 1.0.12103|
-|CDM|v5.3|CDM V6.0 추가<br />- OBSERVATION.observation_event_id<br />- OBSERVATION.obs_event_field_concept_id<br />- SURVEY_CONDUCT|
-
-### DB 설정(실행 환경에 맞는 셋팅 필요)
-경로 : org-snubh-hirc-pghd-api/src/main/resources/config.properties
-- redshift 설정
-```
-dataSource.driverClassName=com.amazon.redshift.jdbc42.Driver
-dataSource.url=jdbc:redshift:{IP}:{PORT}/{DatabaseName}
-dataSource.username={ID}
-dataSource.password={Password}
-
-dataSource.maxActive=8
-dataSource.maxIdle=8
-dataSource.minIdle=1
-dataSource.ValidationQuery=select 1
-
-hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
-hibernate.show_sql=false
-hibernate.format_sql=false
-hibernate.packagesToScan=org.snubh.hirc.pghd.api.dto
-```
-- Oracle 설정
-```
-dataSource.driverClassName=oracle.jdbc.driver.OracleDriver
-dataSource.url=jdbc:oracle:thin:@{IP}:{PORT}/{DatabaseName}
-dataSource.username={ID}
-dataSource.password={Password}
-
-dataSource.maxActive=8
-dataSource.maxIdle=8
-dataSource.minIdle=1
-dataSource.ValidationQuery=select 1 from dual
-
-hibernate.dialect=org.hibernate.dialect.Oracle10gDialect
-hibernate.show_sql=false
-hibernate.format_sql=false
-hibernate.packagesToScan=org.snubh.hirc.pghd.api.dto
-```
-### 실행
-1. org-snubh-hirc-pghd-api.war 또는 org-snubh-hirc-pghd-web.war 파일을 사용합니다.
-2. 해당 파일을 **Tomcat** 하위에 **webapps/** 디렉토리에 복사하고 Tomcat을 구동합니다.
-3. 다음 링크를 통해서 서버에 접속 합니다.(접속포트 6001은 각 환경별 서버를 구성한 방식에 따라 설정)
-    - 시각화 WEB : <http://localhost:6001/org-snubh-hirc-pghd-web/>
-    - FHIR 서버 API : <http://localhost:6001/org-snubh-hirc-pghd-api/fhir/>
-
-## 직접 빌드를 통한 실행파일 생성
-### 인터넷 가능한 빌드환경(eGovFrame : Eclipse 또는 Maven 사용) 
-|Tool|버전|비고|
-|:---:|:---:|:---|
-|JDK|1.8||
-|Tomcat|8.5||
-|Maven|3.8.1||
-|Database|Oracle<br />Redshift|- Oracle Database 10g<br />- PostgreSQL 8.0.2, Redshift 1.0.12103|
-|CDM|v5.3|CDM V6.0 추가<br />- OBSERVATION.observation_event_id<br />- OBSERVATION.obs_event_field_concept_id<br />- SURVEY_CONDUCT|
-
-### 환경설정
-#### org-snubh-hirc-pghd-web
+## 환경설정
+### org-snubh-hirc-pghd-web
 - FHIR 서버 API 및 시각화 WEB URL 설정
 ```
 경로 : resources/config.properties
@@ -95,7 +43,7 @@ fhirserver.url=http://localhost:6001/org-snubh-hirc-pghd-api/fhir/
 
 <Property name="fd-log-root">D:/ezCaretech/hiebin_dev/org-snubh-hirc-pghd-web</Property>
 ```
-#### org-snubh-hirc-pghd-api
+### org-snubh-hirc-pghd-api
 - FHIR 서버 API 설정
 ```
 경로 : resources/config.properties
@@ -154,7 +102,12 @@ hibernate.show_sql=false
 hibernate.format_sql=false
 hibernate.packagesToScan=org.snubh.hirc.pghd.api.dto
 ```
-### 실행
+- DB Table Schema 설정
+```
+경로 : org.snubh.hirc.pghd.api.dto.*Dto.java
+@Table(name = "CARE_SITE", schema="{schema}")
+```
+## 실행
 1. Application Server에 배포 하기 위해서는 먼저 프로젝트를 빌드 해야 합니다.
 ```
 # Eclipse 이용한 빌드
@@ -172,7 +125,16 @@ mvn clean install
 * 시각화 WEB : <http://localhost:6001/org-snubh-hirc-pghd-web/>
 * FHIR 서버 API : <http://localhost:6001/org-snubh-hirc-pghd-api/fhir/>
 
-  
+## 직접 빌드를 통한 실행파일 생성
+### Eclipse 
+1. JavaEE(J2EE) JDK 1.8의 환경 사용
+2. 표준프레임워크 포털 eGovFrame의 개발자용 개발환경 64bit(Implementation Tool) Version 3.10.0 사용 가능
+  - https://www.egovframe.go.kr/home/sub.do?menuNo=41
+3. Windows -> Preferences -> Java -> Installed JREs -> JDK 1.8 설정
+4. Windows -> Preferences -> Maven -> Installations -> maven 3.8.1 설정
+5. Windows -> Preferences -> Maven -> User Settings -> Local Repository 설정
+6. File -> Import -> Maven -> Existing Maven Projects -> Projects 추가
+  - 인터넷이 되지 않는 환경에서 빌드 환경 구축시 인터넷이 되는 PC에서 프로젝트 추가하고 Maven 빌드 후 Maven Local Repository안의 파일을 복사하여 구성하며 Windows -> Preferences -> Maven -> Offline 체크함
 
 ## 시각화 WEB UI
 ![Alt text](/org-snubh-hirc-pghd-web-01.png "시각화 WEB UI")
