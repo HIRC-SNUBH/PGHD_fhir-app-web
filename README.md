@@ -102,6 +102,23 @@ hibernate.show_sql=false
 hibernate.format_sql=false
 hibernate.packagesToScan=org.snubh.hirc.pghd.api.dto
 ```
+- PostgreSQL 설정
+```
+dataSource.driverClassName=org.postgresql.Driver
+dataSource.url=jdbc:postgresql:{IP}:{PORT}/{DatabaseName}
+dataSource.username={ID}
+dataSource.password={Password}
+
+dataSource.maxActive=8
+dataSource.maxIdle=8
+dataSource.minIdle=1
+dataSource.ValidationQuery=select 1
+
+hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+hibernate.show_sql=false
+hibernate.format_sql=false
+hibernate.packagesToScan=org.snubh.hirc.pghd.api.dto
+```
 - DB Table Schema 설정
 ```
 경로 : org.snubh.hirc.pghd.api.dto.*Dto.java
